@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Texto a Voz Multivoz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="skin-default">
+  <div class="container">
+    <header>
+      <h1>Texto a Voz</h1>
+      <div class="theme-toggle">
+        <label for="skin">Skin:</label>
+        <select id="skin">
+          <option value="default">Default</option>
+          <option value="dark">Oscuro</option>
+          <option value="light">Claro</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <textarea id="text-input" placeholder="Escribe tu texto aquí..."></textarea>
+
+      <div class="controls">
+        <label for="voice-select">Voz:</label>
+        <select id="voice-select"></select>
+
+        <label for="emotion-select">Emoción:</label>
+        <select id="emotion-select">
+          <option value="neutral">Neutro</option>
+          <option value="happy">Feliz</option>
+          <option value="sad">Triste</option>
+          <option value="angry">Enfadado</option>
+          <option value="excited">Emocionado</option>
+        </select>
+
+        <label for="type-select">Tipo:</label>
+        <select id="type-select">
+          <option value="narration">Narración</option>
+          <option value="dialogue">Diálogo</option>
+        </select>
+      </div>
+
+      <button id="speak-btn">Leer Texto</button>
+      <button id="stop-btn">Detener</button>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

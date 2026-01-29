@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Skin Default */
+.skin-default {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  color: #333;
+}
+.skin-default .container {
+  background: white;
+  color: #333;
+}
+
+/* Skin Oscuro */
+.skin-dark {
+  background: #1e1e1e;
+  color: #fff;
+}
+.skin-dark .container {
+  background: #2c2c2c;
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* Skin Claro */
+.skin-light {
+  background: #f7f9fc;
+  color: #333;
+}
+.skin-light .container {
+  background: white;
+  color: #333;
+}
+
+/* Inputs, selects, botones */
+input, select, button, textarea {
+  padding: 0.7rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Tema claro */
+.skin-light input,
+.skin-light select,
+.skin-light textarea {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+/* Tema oscuro */
+.skin-dark input,
+.skin-dark select,
+.skin-dark textarea {
+  background-color: #444;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+/* Botones */
+button {
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#speak-btn {
+  background-color: #4CAF50;
+}
+#speak-btn:hover {
+  background-color: #45a049;
+}
+
+#stop-btn {
+  background-color: #f44336;
+}
+#stop-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Tema oscuro botones */
+.skin-dark button {
+  background-color: #45a049;
+}
+.skin-dark #stop-btn {
+  background-color: #d32f2f;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+/* Controles */
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Cabecera */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.theme-toggle label {
+  margin-right: 0.5rem;
+}
